@@ -1,6 +1,12 @@
 import "./style.css";
 
-// Select the main header by ID and log it.
-
 const header = document.getElementById("main-header");
-console.info(header);
+const navLinks = document.querySelectorAll(".navbar a");
+document.querySelector("#app").innerHTML = `
+  <h3 class="text-3xl font-bold underline">
+    The main header is: ${header.textContent}
+  </h3>
+  <p>
+  Number of navigation links: ${navLinks.length}
+  </p>
+`;
