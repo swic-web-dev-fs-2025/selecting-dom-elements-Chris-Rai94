@@ -12,19 +12,19 @@ document.querySelector("#app").innerHTML = `
   </p>
 `;
 
-navLinks.forEach((link) => {
+navLinks?.forEach((link) => {
   if (link.getAttribute("href").startsWith("/")) {
     link.textContent += " [internal]";
   }
 });
 
 const requiredInputs = document.querySelectorAll("input[required]");
-requiredInputs.forEach((input) => {
+requiredInputs?.forEach((input) => {
   input.style.outline = "2px solid gold";
 });
 
 const cards = document.querySelectorAll(".card");
-cards.forEach((card) => {
+cards?.forEach((card) => {
   card.setAttribute("data-viewed", "true");
 });
 
