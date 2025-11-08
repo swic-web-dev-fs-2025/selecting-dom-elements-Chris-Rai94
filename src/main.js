@@ -22,3 +22,8 @@ const requiredInputs = document.querySelectorAll("input[required]");
 requiredInputs.forEach((input) => {
   input.style.outline = "2px solid gold";
 });
+
+const cards = document.querySelectorAll(".card");
+cards.forEach((card) => {
+  card.setAttribute("data-viewed", "true");
+});
