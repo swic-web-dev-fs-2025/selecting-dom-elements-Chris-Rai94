@@ -17,3 +17,8 @@ navLinks.forEach((link) => {
     link.textContent += " [internal]";
   }
 });
+
+const requiredInputs = document.querySelectorAll("input[required]");
+requiredInputs.forEach((input) => {
+  input.style.outline = "2px solid gold";
+});
