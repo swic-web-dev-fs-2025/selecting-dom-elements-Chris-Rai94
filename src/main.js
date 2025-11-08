@@ -27,3 +27,7 @@ const cards = document.querySelectorAll(".card");
 cards.forEach((card) => {
   card.setAttribute("data-viewed", "true");
 });
+
+// Select the product with data-product-id="2" and change its price to "$24.99".
+const productB = document.querySelector('[data-product-id="2"]');
+productB.querySelector(".price").textContent = "$24.99";
