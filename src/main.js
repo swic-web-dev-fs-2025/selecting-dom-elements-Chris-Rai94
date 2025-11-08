@@ -31,3 +31,12 @@ cards?.forEach((card) => {
 // Select the product with data-product-id="2" and change its price to "$24.99".
 const productB = document.querySelector('[data-product-id="2"]');
 productB.querySelector(".price").textContent = "$24.99";
+
+// lab 2
+//const title = document.querySelector("main .card .card-title");
+
+const updatedTitle = document.querySelector('[data-title-id="1"]');
+
+if (updatedTitle) {
+  updatedTitle.textContent = "Updated Title";
+}
