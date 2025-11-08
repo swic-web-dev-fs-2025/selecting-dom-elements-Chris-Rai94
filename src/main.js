@@ -1,7 +1,6 @@
 import "./style.css";
 
-document.querySelector("#app").innerHTML = `
-  <h1 class="text-3xl font-bold underline">
-    Hello Vite!
-  </h1>
-`;
+// Select the main header by ID and log it.
+
+const header = document.getElementById("main-header");
+console.info(header);
