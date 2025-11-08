@@ -2,6 +2,7 @@ import "./style.css";
 
 const header = document.getElementById("main-header");
 const navLinks = document.querySelectorAll(".navbar a");
+
 document.querySelector("#app").innerHTML = `
   <h3 class="text-3xl font-bold underline">
     The main header is: ${header.textContent}
@@ -10,3 +11,9 @@ document.querySelector("#app").innerHTML = `
   Number of navigation links: ${navLinks.length}
   </p>
 `;
+
+navLinks.forEach((link) => {
+  if (link.getAttribute("href").startsWith("/")) {
+    link.textContent += " [internal]";
+  }
+});
